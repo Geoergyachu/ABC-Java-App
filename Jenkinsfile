@@ -68,7 +68,7 @@ pipeline {
     post {
         success {
             echo 'Build completed successfully!'
-            archiveArtifacts artifacts: 'target/*.war', thormprint: true
+            archiveArtifacts artifacts: 'target/*.war', fingerprint: true
         }
         failure {
             echo 'Build failed!'
